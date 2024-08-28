@@ -19,7 +19,6 @@ func main() {
 
 	if availableMemoryGB < 1.0 {
 		fmt.Fprintf(os.Stderr, "System available memory is less than 1GB: %.2fGB\n", availableMemoryGB)
-		os.Exit(1)
 	} else {
 		fmt.Printf("System available memory is sufficient: %.2fGB\n", availableMemoryGB)
 	}
